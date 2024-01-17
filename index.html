@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <title>Password Generator</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header section, notice about data-->
+    <header>
+        <div class="notice">
+          <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.</p>
+          <p>Passwords are cleared after use, and we do not store any content generated on this site.</p>
+        </div>
+      </header>
+    <!-- Password generator container-->
+<div class="container">
+    <h2>Password Generator</h2>
+    <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+            <i class="far fa-clipboard"></i>
+        </button>
+    </div>
+    <div class="settings">
+        <div class="setting">
+            <label for="length">Choose the length of the password between 6 (Weak) and 50 (Strong)</label>
+            <input type="range" id="length" min="6" max="50" value="6" class="length-slider">
+            <span id="length-display">6</span>
+        </div>
+        <div class="setting">
+            <label>Include uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="setting">
+            <label>Include lowercase letters</label>
+            <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="setting">
+            <label>Include numbers</label>
+            <input type="checkbox" id="numbers" checked>
+        </div>
+        <div class="setting">
+            <label>Include symbols</label>
+            <input type="checkbox" id="symbols" checked>
+        </div>
+
+    </div>
+    <button class="btn btn-large" id="generate">
+        Generate Password
+    </button>
+</div>
+
+<!-- Footer -->
+    <div class="footer" id="footer">
+        Copyright © 2024 Design by LR. All Rights Reserved.
+    </div>
+<!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
